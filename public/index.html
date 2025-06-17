@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Emoji Favicon Picker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Pick an emoji and instantly use it as your browser tab icon. No cookies, no clutter — just fun and simple favicon customization." />
+
+    <!-- 🌐 Open Graph Meta Tags -->
+    <meta property="og:title" content="Emoji Favicon Picker" />
+    <meta property="og:description" content="Pick an emoji and instantly use it as your tab icon." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://raul.viigipuu.ee/apps/svg-favicons/" />
+    <meta property="og:image" content="https://raul.viigipuu.ee/apps/svg-favicons/images/og-image.jpg" />
+
+    <!-- 🐦 Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Emoji Favicon Picker" />
+    <meta name="twitter:description" content="Pick an emoji and instantly use it as your tab icon." />
+    <meta name="twitter:url" content="https://raul.viigipuu.ee/apps/svg-favicons/" />
+    <meta name="twitter:image" content="https://raul.viigipuu.ee/apps/svg-favicons/images/og-image.jpg" />
+
+    <link rel="canonical" href="https://raul.viigipuu.ee/apps/svg-favicons" />
+
+    <!-- 📦 JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Emoji Favicon Picker",
+      "url": "https://raul.viigipuu.ee/apps/svg-favicons/",
+      "applicationCategory": "Utility",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires JavaScript and modern browser",
+      "description": "Pick an emoji and instantly use it as your browser tab icon. No cookies, no clutter — just fun favicon customization.",
+      "image": "https://raul.viigipuu.ee/apps/svg-favicons/images/og-image.jpg",
+      "inLanguage": "en",
+      "creator": {
+        "@type": "Person",
+        "name": "Raul"
+      }
+    }
+  </script>
+
+    <!-- 🧠 Styles & Favicon -->
+    <link rel="icon" id="favicon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🙂</text></svg>" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <main class="container">
+        <h1>Emoji Favicon Picker</h1>
+
+        <section class="generator">
+            <h2>Generate Your Own Emoji Favicon Snippet</h2>
+            <p>Type or paste any emoji below to get the HTML code for your website:</p>
+
+            <div class="form-group">
+                <label for="emojiInput">Your Emoji</label>
+                <input type="text" id="emojiInput" maxlength="2" placeholder="e.g. 😏" />
+            </div>
+
+            <div class="form-group">
+                <label for="faviconCode">HTML Snippet</label>
+                <textarea id="faviconCode" readonly rows="3"></textarea>
+            </div>
+
+            <button id="copyButton">Copy to Clipboard</button>
+            <span id="copyFeedback" class="copy-feedback">Copied!</span>
+
+        </section>
+
+        <section class="emoji-picker">
+            <h2>Click any emoji to set it as your tab icon</h2>
+            <div id="emojiCategories"></div>
+        </section>
+    </main>
+
+    <footer>
+        This website does not use cookies 🍪
+    </footer>
+</body>
+
+</html>

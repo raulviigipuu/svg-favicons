@@ -1,0 +1,102 @@
+/* ============================
+   1. Generator Section
+============================ */
+
+.generator {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #ddd;
+}
+
+.generator h2 {
+    font-size: var(--font-md);
+    margin-bottom: 0.75rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+input[type="text"] {
+    width: 100%;
+    font-size: var(--font-md);
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+textarea {
+    width: 100%;
+    font-size: 0.85rem;
+    padding: 0.75rem;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: none;
+    font-family: monospace;
+}
+
+#copyButton {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: var(--font-md);
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#copyButton:hover {
+    background-color: #005fa3;
+}
+
+.copy-feedback {
+    display: none;
+    margin-left: 0.5rem;
+    font-size: var(--font-sm);
+    color: green;
+}
+
+/* ============================
+   2. Emoji Picker Section
+============================ */
+
+.category {
+    margin-bottom: 1.5rem;
+}
+
+.category h3 {
+    margin-bottom: 0.5rem;
+    font-size: var(--font-md);
+    color: #333;
+}
+
+.favicon-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.favicon-grid button {
+    font-size: 1.75rem;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.1s ease, background-color 0.2s ease;
+}
+
+.favicon-grid button:hover {
+    background-color: #e0f0ff;
+    transform: scale(1.1);
+}
