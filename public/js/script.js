@@ -1,7 +1,7 @@
 // =========================
 // Constants & DOM References
 // =========================
-const faviconLink = document.getElementById("favicon");
+const faviconLink = document.querySelector("link[rel~='icon']");
 const emojiInput = document.getElementById("emojiInput");
 const faviconCode = document.getElementById("faviconCode");
 const copyButton = document.getElementById("copyButton");
